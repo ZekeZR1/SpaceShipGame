@@ -1,0 +1,1167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Preview|Win32">
+      <Configuration>Preview</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Preview|x64">
+      <Configuration>Preview</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Game</ProjectName>
+    <ProjectGuid>{06EDC280-1187-4614-A248-E640C095FA6B}</ProjectGuid>
+    <RootNamespace>Game</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.props" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Preview|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\Windows Kits\8.1\Include\um;$(ProjectDir);$(ProjectDir)/../;$(IncludePath);$(ProjectDir)/../tkEngine/bulletPhysics/src;$(ProjectDir)/Src;$(ProjectDir)/EffekseerRuntime130/src/include;$(ProjectDir)/../tkEngine/EffekseerRuntime130/src/include</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\8.1\Lib\winv6.3\um\x86;$(ProjectDir)/../tkEngine/DirectXTK/Bin/Desktop_2015_Win10/Win32/Debug;$(ProjectDir)/Debug;$(ProjectDir)/../tkEngine/EffekseerRuntime130\src\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\Windows Kits\8.1\Include\um;$(ProjectDir);$(ProjectDir)/../;$(IncludePath);$(ProjectDir)/../tkEngine/bulletPhysics/src;$(ProjectDir)/Src;$(ProjectDir)/EffekseerRuntime130/src/include;$(ProjectDir)/../tkEngine/EffekseerRuntime130/src/include</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\8.1\Lib\winv6.3\um\x86;$(ProjectDir)/../tkEngine/DirectXTK/Bin/Desktop_2015_Win10/Win32/Release;$(ProjectDir)/Release;$(ProjectDir)/../tkEngine/EffekseerRuntime130\src\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\Windows Kits\8.1\Include\um;$(ProjectDir);$(ProjectDir)/../;$(IncludePath);$(ProjectDir)/../tkEngine/bulletPhysics/src;$(ProjectDir)/Src;$(ProjectDir)/../tkEngine/EffekseerRuntime130/src/include</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\8.1\Lib\winv6.3\um\x86;$(ProjectDir)/../tkEngine/DirectXTK/Bin/Desktop_2015_Win10/Win32/Release;$(ProjectDir)/Preview;$(ProjectDir)/../tkEngine/EffekseerRuntime130\src\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\Windows Kits\8.1\Include\um;$(ProjectDir);$(ProjectDir)/../;$(IncludePath);$(ProjectDir)/../tkEngine/bulletPhysics/src;$(ProjectDir)/Src;$(ProjectDir)/../tkEngine/EffekseerRuntime130/src/include;$(ProjectDir)/EffekseerRuntime130/src/include;$(ProjectDir)/../tkEngine/EffekseerRuntime130/src/include</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\8.1\Lib\winv6.3\um\x64;$(ProjectDir)/../tkEngine/DirectXTK/Bin/Desktop_2015_Win10/x64/Debug;$(ProjectDir)/x64/Debug;$(ProjectDir)/../tkEngine/EffekseerRuntime130\src\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|X64'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\Windows Kits\8.1\Include\um;$(ProjectDir);$(ProjectDir)/../;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)/../tkEngine/bulletPhysics/src;$(ProjectDir)/Src;$(ProjectDir)/EffekseerRuntime130/src/include;$(ProjectDir)/../tkEngine/EffekseerRuntime130/src/include</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\8.1\Lib\winv6.3\um\x64;$(ProjectDir)/../tkEngine/DirectXTK/Bin/Desktop_2015_Win10/x64/Release;$(ProjectDir)/x64/Release;$(ProjectDir)/../tkEngine/EffekseerRuntime130\src\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|X64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\Windows Kits\8.1\Include\um;$(ProjectDir);$(ProjectDir)/../;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)/../tkEngine/bulletPhysics/src;$(ProjectDir)/Src;$(ProjectDir)/EffekseerRuntime130/src/include;$(ProjectDir)/../tkEngine/EffekseerRuntime130/src/include</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\8.1\Lib\winv6.3\um\x64;$(ProjectDir)/../tkEngine/DirectXTK/Bin/Desktop_2015_Win10/x64/Preview;$(ProjectDir)/x64/Preview;$(ProjectDir)/../tkEngine/EffekseerRuntime130\src\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|X64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>..\..\..\DXUT11\Core;..\..\..\DXUT11\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;DEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;BT_NO_SIMD_OPERATOR_OVERLOADS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;xaudio2.lib;xinput.lib;dxguid.lib;winmm.lib;comctl32.lib;DirectXTK.lib;tkEngine.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;LinearMath_Debug.lib;Effekseer.Debug.lib;EffekseerRendererDX11.Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/preBuild.bat</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/PostBuild.bat</Command>
+    </PostBuildEvent>
+    <MeshContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/modelData/%(Filename).cmo</ContentOutput>
+    </MeshContentTask>
+    <ImageContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
+    </ImageContentTask>
+    <CustomBuild>
+      <Command>call $(ProjectDir)..\tkTools\tkContentTools.bat %(Identity) $(OutDir)</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>tkContentTools</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>$(OutDir)\%(Identity)</Outputs>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>..\..\..\DXUT11\Core;..\..\..\DXUT11\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;BT_NO_SIMD_OPERATOR_OVERLOADS;TK_MASTER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;xaudio2.lib;xinput.lib;dxguid.lib;winmm.lib;comctl32.lib;DirectXTK.lib;tkEngine.lib;BulletCollision.lib;BulletDynamics.lib;LinearMath.lib;Effekseer.Release.lib;EffekseerRendererDX11.Release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/preBuild.bat</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/PostBuild.bat</Command>
+    </PostBuildEvent>
+    <MeshContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/modelData/%(Filename).cmo</ContentOutput>
+    </MeshContentTask>
+    <ImageContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
+    </ImageContentTask>
+    <CustomBuild>
+      <Command>call $(ProjectDir)..\tkTools\tkContentTools.bat %(Identity) $(OutDir)</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>tkContentTools</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>$(OutDir)\%(Identity)</Outputs>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>..\..\..\DXUT11\Core;..\..\..\DXUT11\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;DEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;BT_NO_SIMD_OPERATOR_OVERLOADS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;xaudio2.lib;xinput.lib;dxguid.lib;winmm.lib;comctl32.lib;DirectXTK.lib;tkEngine.lib;BulletCollision.lib;BulletDynamics.lib;LinearMath.lib;Effekseer.Release.lib;EffekseerRendererDX11.Release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/preBuild.bat</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/PostBuild.bat</Command>
+    </PostBuildEvent>
+    <MeshContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/modelData/%(Filename).cmo</ContentOutput>
+    </MeshContentTask>
+    <ImageContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
+    </ImageContentTask>
+    <CustomBuild>
+      <Command>call $(ProjectDir)..\tkTools\tkContentTools.bat %(Identity) $(OutDir)</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>tkContentTools</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>$(OutDir)\%(Identity)</Outputs>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>..\..\..\DXUT11\Core;..\..\..\DXUT11\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;BT_NO_SIMD_OPERATOR_OVERLOADS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;xaudio2.lib;xinput.lib;dxguid.lib;winmm.lib;comctl32.lib;DirectXTK.lib;tkEngine.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;LinearMath_Debug.lib;Effekseer.Debug.lib;EffekseerRendererDX11.Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/preBuild.bat</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/PostBuild.bat</Command>
+    </PostBuildEvent>
+    <MeshContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/modelData/%(Filename).cmo</ContentOutput>
+    </MeshContentTask>
+    <ImageContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
+    </ImageContentTask>
+    <CustomBuild>
+      <Command>call $(ProjectDir)..\tkTools\tkContentTools.bat %(Identity) $(OutDir)</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>tkContentTools</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>$(OutDir)\%(Identity)</Outputs>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>..\..\..\DXUT11\Core;..\..\..\DXUT11\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;d3dx11d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Preview|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>..\..\..\DXUT11\Core;..\..\..\DXUT11\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;d3dx11d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>..\..\..\DXUT11\Core;..\..\..\DXUT11\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;BT_NO_SIMD_OPERATOR_OVERLOADS;TK_MASTER</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;xaudio2.lib;xinput.lib;d3dx11.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;DirectXTK.lib;tkEngine.lib;BulletCollision.lib;BulletDynamics.lib;LinearMath.lib;Effekseer.Release.lib;EffekseerRendererDX11.Release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/preBuild.bat</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/PostBuild.bat</Command>
+    </PostBuildEvent>
+    <MeshContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/modelData/%(Filename).cmo</ContentOutput>
+    </MeshContentTask>
+    <ImageContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
+    </ImageContentTask>
+    <CustomBuild>
+      <Command>call $(ProjectDir)..\tkTools\tkContentTools.bat %(Identity) $(OutDir)</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>tkContentTools</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>$(OutDir)\%(Identity)</Outputs>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Preview|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>..\..\..\DXUT11\Core;..\..\..\DXUT11\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;BT_NO_SIMD_OPERATOR_OVERLOADS</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;xaudio2.lib;xinput.lib;d3dx11.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;DirectXTK.lib;tkEngine.lib;BulletCollision.lib;BulletDynamics.lib;LinearMath.lib;Effekseer.Release.lib;EffekseerRendererDX11.Release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/preBuild.bat</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>call $(ProjectDir)../tkTools/PostBuild.bat</Command>
+    </PostBuildEvent>
+    <MeshContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/modelData/%(Filename).cmo</ContentOutput>
+    </MeshContentTask>
+    <ImageContentTask>
+      <ContentOutput>$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
+    </ImageContentTask>
+    <CustomBuild>
+      <Command>call $(ProjectDir)..\tkTools\tkContentTools.bat %(Identity) $(OutDir)</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>tkContentTools</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>$(OutDir)\%(Identity)</Outputs>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>..\..\..\DXUT11\Core;..\..\..\DXUT11\Optional;%(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;d3dx11.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Attachments.cpp" />
+    <ClCompile Include="BackDummy.cpp" />
+    <ClCompile Include="BackGenerator.cpp" />
+    <ClCompile Include="BackGround.cpp" />
+    <ClCompile Include="BackWall.cpp" />
+    <ClCompile Include="ClearState.cpp" />
+    <ClCompile Include="Earth.cpp" />
+    <ClCompile Include="Fade.cpp" />
+    <ClCompile Include="FuelMeter.cpp" />
+    <ClCompile Include="Game.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GameCamera.cpp" />
+    <ClCompile Include="GameClear.cpp" />
+    <ClCompile Include="GameOver2D.cpp" />
+    <ClCompile Include="HelthMeter.cpp" />
+    <ClCompile Include="How.cpp" />
+    <ClCompile Include="Laserbeam.cpp" />
+    <ClCompile Include="main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="minusGenerator.cpp" />
+    <ClCompile Include="minusObj.cpp" />
+    <ClCompile Include="Notify.cpp" />
+    <ClCompile Include="Param2D.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="plusGenerator.cpp" />
+    <ClCompile Include="plusObj.cpp" />
+    <ClCompile Include="ShipCustomizeScene.cpp" />
+    <ClCompile Include="ShipState.cpp" />
+    <ClCompile Include="SpaceMap.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Preview|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Story.cpp" />
+    <ClCompile Include="Title.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Attachments.h" />
+    <ClInclude Include="BackDummy.h" />
+    <ClInclude Include="BackGenerator.h" />
+    <ClInclude Include="BackGround.h" />
+    <ClInclude Include="BackWall.h" />
+    <ClInclude Include="ClearState.h" />
+    <ClInclude Include="Earth.h" />
+    <ClInclude Include="Fade.h" />
+    <ClInclude Include="FuelMeter.h" />
+    <ClInclude Include="GameCamera.h" />
+    <ClInclude Include="GameClear.h" />
+    <ClInclude Include="GameOver2D.h" />
+    <ClInclude Include="HelthMeter.h" />
+    <ClInclude Include="How.h" />
+    <ClInclude Include="Laserbeam.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="minusGenerator.h" />
+    <ClInclude Include="minusObj.h" />
+    <ClInclude Include="Notify.h" />
+    <ClInclude Include="Param2D.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="plusGenerator.h" />
+    <ClInclude Include="plusObj.h" />
+    <ClInclude Include="ShipCustomizeScene.h" />
+    <ClInclude Include="ShipState.h" />
+    <ClInclude Include="SpaceMap.h" />
+    <ClInclude Include="Story.h" />
+    <ClInclude Include="Title.h" />
+    <CustomBuild Include="Assets\shader\LightingFunction.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\modelCB.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\modelSRV.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\modelStruct.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\sampleBRDF.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="Game.h" />
+    <CLInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ResourceCompile Include="Game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\shader\bloom.fx">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\copy.fx">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\fxaa.fx">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\LightCulling.fx">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\model.fx">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\sprite.fx">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\tonemap.fx">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\shader\dithering.fx">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\font\myfile.spritefont">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\shader\shadowBlur.fx">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\press_key.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\gamebgm.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\shipSE.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\button.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\start.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\title.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\charge.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\Cursor1.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\digitalworld.WAV">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\boost.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\bomb4.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\boost2.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\gameover.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\yokoku.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\shipbomb.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\magic4.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\magic.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\repair.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\animData\AnimSpaceShipIdle.tka">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\animData\AnimSpaceShipRight.tka">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\MapBGM.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\stage00.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\stage01.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\stage02.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\stage03.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\mapscene.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\gameclearbgm.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\custombgm.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\storybgm.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\custombgm1.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\Buff.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\shieldSe.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\laser5.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\sound\baseSe.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageContentTask Include="Assets\sprite\00Text.png" />
+    <ImageContentTask Include="Assets\sprite\01Text.png" />
+    <ImageContentTask Include="Assets\sprite\02Text.png" />
+    <ImageContentTask Include="Assets\sprite\03Text.png" />
+    <ImageContentTask Include="Assets\sprite\Abutton.png" />
+    <ImageContentTask Include="Assets\sprite\AtchGraCon.png" />
+    <ImageContentTask Include="Assets\sprite\AtchLaser.png" />
+    <ImageContentTask Include="Assets\sprite\AtchNormal.png" />
+    <ImageContentTask Include="Assets\sprite\AtchShield.png" />
+    <ImageContentTask Include="Assets\sprite\Attachment01.png" />
+    <ImageContentTask Include="Assets\sprite\Attachment02.png" />
+    <ImageContentTask Include="Assets\sprite\Attachment03.png" />
+    <ImageContentTask Include="Assets\sprite\Bbutton.png" />
+    <ImageContentTask Include="Assets\sprite\customizepick.png" />
+    <ImageContentTask Include="Assets\sprite\customizepickA.png" />
+    <ImageContentTask Include="Assets\sprite\CustomizeSceneBackTexture.png" />
+    <ImageContentTask Include="Assets\sprite\CutomizeBackSprite.png" />
+    <ImageContentTask Include="Assets\sprite\Dpad.png" />
+    <ImageContentTask Include="Assets\sprite\DpadS.png" />
+    <ImageContentTask Include="Assets\sprite\fade.png" />
+    <ImageContentTask Include="Assets\sprite\fade1.png" />
+    <ImageContentTask Include="Assets\sprite\False.png" />
+    <ImageContentTask Include="Assets\sprite\FuelMeter.png" />
+    <ImageContentTask Include="Assets\sprite\FuelMeter1.png" />
+    <ImageContentTask Include="Assets\sprite\FuelMeterAlpha.png" />
+    <ImageContentTask Include="Assets\sprite\gameclear.png" />
+    <ImageContentTask Include="Assets\sprite\GameClearSprite.png" />
+    <ImageContentTask Include="Assets\sprite\gameover.png" />
+    <ImageContentTask Include="Assets\sprite\GameOverSprite.png" />
+    <ImageContentTask Include="Assets\sprite\GameTitle.png" />
+    <ImageContentTask Include="Assets\sprite\GameTitle2.png" />
+    <ImageContentTask Include="Assets\sprite\GCS.png" />
+    <ImageContentTask Include="Assets\sprite\GraConATCS.png" />
+    <ImageContentTask Include="Assets\sprite\GraConInfo.png" />
+    <ImageContentTask Include="Assets\sprite\HelthMeter.png" />
+    <ImageContentTask Include="Assets\sprite\HelthMeter1.png" />
+    <ImageContentTask Include="Assets\sprite\HelthMeterAlpha.png" />
+    <ImageContentTask Include="Assets\sprite\howpick.png" />
+    <ImageContentTask Include="Assets\sprite\howpickA.png" />
+    <ImageContentTask Include="Assets\sprite\howtoplay.png" />
+    <ImageContentTask Include="Assets\sprite\jump0.png" />
+    <ImageContentTask Include="Assets\sprite\jump1.png" />
+    <ImageContentTask Include="Assets\sprite\LaserATCS.png" />
+    <ImageContentTask Include="Assets\sprite\LaserInfo.png" />
+    <ImageContentTask Include="Assets\sprite\Line.png" />
+    <ImageContentTask Include="Assets\sprite\Line1.png" />
+    <ImageContentTask Include="Assets\sprite\Menu.png" />
+    <ImageContentTask Include="Assets\sprite\MenuPick.png" />
+    <ImageContentTask Include="Assets\sprite\Meter.png" />
+    <ImageContentTask Include="Assets\sprite\MeterBack.png" />
+    <ImageContentTask Include="Assets\sprite\NormalATCS.png" />
+    <ImageContentTask Include="Assets\sprite\NormalInfo.png" />
+    <ImageContentTask Include="Assets\sprite\Noti1.png" />
+    <ImageContentTask Include="Assets\sprite\Noti2.png" />
+    <ImageContentTask Include="Assets\sprite\Noti3.png" />
+    <ImageContentTask Include="Assets\sprite\paramText.png" />
+    <ImageContentTask Include="Assets\sprite\pick.png" />
+    <ImageContentTask Include="Assets\sprite\PlayingStage.png" />
+    <ImageContentTask Include="Assets\sprite\RankA.png" />
+    <ImageContentTask Include="Assets\sprite\RankB.png" />
+    <ImageContentTask Include="Assets\sprite\RankC.png" />
+    <ImageContentTask Include="Assets\sprite\RankD.png" />
+    <ImageContentTask Include="Assets\sprite\RankS.png" />
+    <ImageContentTask Include="Assets\sprite\RankSprite.png" />
+    <ImageContentTask Include="Assets\sprite\ShieldATCS.png" />
+    <ImageContentTask Include="Assets\sprite\ShieldInfo.png" />
+    <ImageContentTask Include="Assets\sprite\Stage00Notify.png" />
+    <ImageContentTask Include="Assets\sprite\Stage01SeacretText.png" />
+    <ImageContentTask Include="Assets\sprite\StageClear.png" />
+    <ImageContentTask Include="Assets\sprite\StageText.png" />
+    <ImageContentTask Include="Assets\sprite\startbutton.png" />
+    <ImageContentTask Include="Assets\sprite\startpick.png" />
+    <ImageContentTask Include="Assets\sprite\startpickA.png" />
+    <ImageContentTask Include="Assets\sprite\Story01_1.png" />
+    <ImageContentTask Include="Assets\sprite\Story01_2.png" />
+    <ImageContentTask Include="Assets\sprite\Story02_1.png" />
+    <ImageContentTask Include="Assets\sprite\Story02_2.png" />
+    <ImageContentTask Include="Assets\sprite\Story03_1.png" />
+    <ImageContentTask Include="Assets\sprite\Story04_1.png" />
+    <ImageContentTask Include="Assets\sprite\Story05_1.png" />
+    <ImageContentTask Include="Assets\sprite\test01.jpg" />
+    <ImageContentTask Include="Assets\sprite\Title2d.png" />
+    <ImageContentTask Include="Assets\sprite\titles.jpeg" />
+    <ImageContentTask Include="Assets\sprite\understandingXman.png" />
+    <ImageContentTask Include="Assets\sprite\Using01.png" />
+    <ImageContentTask Include="Assets\sprite\Using02.png" />
+    <ImageContentTask Include="Assets\sprite\Using03.png" />
+    <ImageContentTask Include="Assets\sprite\UsingAtchSpriteBack.png" />
+    <ImageContentTask Include="Assets\sprite\warpback.png" />
+    <ImageContentTask Include="Assets\sprite\Xbutton.png" />
+    <ImageContentTask Include="Assets\sprite\XbuttonToCus.png" />
+    <ImageContentTask Include="Assets\sprite\XbuttonToTitle.png" />
+    <ImageContentTask Include="Assets\sprite\Ybutton.png" />
+    <ImageContentTask Include="Assets\sprite\YbuttonR.png" />
+    <ImageContentTask Include="Assets\sprite\YbuttonStory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <MeshContentTask Include="Assets\modelData\AnimSpaceShip.FBX" />
+    <MeshContentTask Include="Assets\modelData\background.FBX" />
+    <MeshContentTask Include="Assets\modelData\BackWall.FBX" />
+    <MeshContentTask Include="Assets\modelData\BackWall1.FBX" />
+    <MeshContentTask Include="Assets\modelData\BarrierAttachment.FBX" />
+    <MeshContentTask Include="Assets\modelData\ClearPlanet.FBX" />
+    <MeshContentTask Include="Assets\modelData\ClearPlanet1.FBX" />
+    <MeshContentTask Include="Assets\modelData\ClearPlanet2.FBX" />
+    <MeshContentTask Include="Assets\modelData\ClearPlanet3.FBX" />
+    <MeshContentTask Include="Assets\modelData\CubeSpace.FBX" />
+    <MeshContentTask Include="Assets\modelData\CustomizeSceneBack.FBX" />
+    <MeshContentTask Include="Assets\modelData\Earth.FBX" />
+    <MeshContentTask Include="Assets\modelData\GravityAttachment.FBX" />
+    <MeshContentTask Include="Assets\modelData\Laserbeam.FBX" />
+    <MeshContentTask Include="Assets\modelData\LaserCannon.FBX" />
+    <MeshContentTask Include="Assets\modelData\mbox.FBX" />
+    <MeshContentTask Include="Assets\modelData\myship01.FBX" />
+    <MeshContentTask Include="Assets\modelData\NormalShipAttachment.FBX" />
+    <MeshContentTask Include="Assets\modelData\Planet0.FBX" />
+    <MeshContentTask Include="Assets\modelData\Planet02.FBX" />
+    <MeshContentTask Include="Assets\modelData\Planet03.FBX" />
+    <MeshContentTask Include="Assets\modelData\Planet04.FBX" />
+    <MeshContentTask Include="Assets\modelData\Planet0Seacret.FBX" />
+    <MeshContentTask Include="Assets\modelData\PlayerAir.FBX" />
+    <MeshContentTask Include="Assets\modelData\plus.FBX" />
+    <MeshContentTask Include="Assets\modelData\RedBox.FBX" />
+    <MeshContentTask Include="Assets\modelData\SpaceMapBack.FBX" />
+    <MeshContentTask Include="Assets\modelData\SpaceShip.FBX" />
+    <MeshContentTask Include="Assets\modelData\SpaceWall.FBX" />
+    <MeshContentTask Include="Assets\modelData\star.FBX" />
+    <MeshContentTask Include="Assets\modelData\Stone.FBX" />
+    <MeshContentTask Include="Assets\modelData\superShip.FBX" />
+    <MeshContentTask Include="Assets\modelData\testpbox.FBX" />
+    <MeshContentTask Include="Assets\modelData\titlespace.FBX" />
+    <MeshContentTask Include="Assets\modelData\toCustomizeShip.FBX" />
+    <MeshContentTask Include="Assets\modelData\waprback2.FBX" />
+    <MeshContentTask Include="Assets\modelData\warpback.FBX" />
+    <MeshContentTask Include="Assets\modelData\warpbakDummy.FBX" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\modelData\AnimSpaceShip.tks">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\effect\Texture\actionlines.png" />
+    <CustomBuild Include="Assets\effect\Texture\aurora01.png" />
+    <CustomBuild Include="Assets\effect\Texture\Burst01.png" />
+    <CustomBuild Include="Assets\effect\Texture\burst02_red.png" />
+    <CustomBuild Include="Assets\effect\Texture\Burst_1.png" />
+    <CustomBuild Include="Assets\effect\Texture\Burst_2.png" />
+    <CustomBuild Include="Assets\effect\Texture\clockHand.png" />
+    <CustomBuild Include="Assets\effect\Texture\Cloud01.png" />
+    <CustomBuild Include="Assets\effect\Texture\double-shockwave.png" />
+    <CustomBuild Include="Assets\effect\Texture\drillshi.png" />
+    <CustomBuild Include="Assets\effect\Texture\eggzero.png" />
+    <CustomBuild Include="Assets\effect\Texture\ExperimentalBlur.png" />
+    <CustomBuild Include="Assets\effect\Texture\ExperimentalNoise.png" />
+    <CustomBuild Include="Assets\effect\Texture\Fire.png" />
+    <CustomBuild Include="Assets\effect\Texture\Fire_Blur.png" />
+    <CustomBuild Include="Assets\effect\Texture\Fire_Single.png" />
+    <CustomBuild Include="Assets\effect\Texture\fire_tex.png" />
+    <CustomBuild Include="Assets\effect\Texture\Flame01.png" />
+    <CustomBuild Include="Assets\effect\Texture\Glass.png" />
+    <CustomBuild Include="Assets\effect\Texture\glow.png" />
+    <CustomBuild Include="Assets\effect\Texture\Halo.png" />
+    <CustomBuild Include="Assets\effect\Texture\IntensiveLine.png" />
+    <CustomBuild Include="Assets\effect\Texture\LaserMain01.png" />
+    <CustomBuild Include="Assets\effect\Texture\LaserMain02.png" />
+    <CustomBuild Include="Assets\effect\Texture\NoiseAnimation.png" />
+    <CustomBuild Include="Assets\effect\Texture\orb_colored.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle01.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle02.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle03.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle04_bokashistrong_hard.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle04_bokashistrong_soft.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle04_bokashi_hard.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle04_bokashi_soft.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle04_clear_hard.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle04_clear_soft.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle_Hard.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle_Soft.png" />
+    <CustomBuild Include="Assets\effect\Texture\ribbon01_trans.png" />
+    <CustomBuild Include="Assets\effect\Texture\ShadowEye.png" />
+    <CustomBuild Include="Assets\effect\Texture\Shockwave.png" />
+    <CustomBuild Include="Assets\effect\Texture\Shock_wave004.png" />
+    <CustomBuild Include="Assets\effect\Texture\Shock_wave_ring001.png" />
+    <CustomBuild Include="Assets\effect\Texture\Shock_wave_ring001_long.png" />
+    <CustomBuild Include="Assets\effect\Texture\Shock_wave_ring002.png" />
+    <CustomBuild Include="Assets\effect\Texture\Smoke.png" />
+    <CustomBuild Include="Assets\effect\Texture\smoke_tex.png" />
+    <CustomBuild Include="Assets\effect\Texture\Splash.png" />
+    <CustomBuild Include="Assets\effect\Texture\Splash01.png" />
+    <CustomBuild Include="Assets\effect\Texture\squareWave.png" />
+    <CustomBuild Include="Assets\effect\Texture\squareWave03_192.png" />
+    <CustomBuild Include="Assets\effect\Texture\squareWave03_384.png" />
+    <CustomBuild Include="Assets\effect\Texture\Star.png" />
+    <CustomBuild Include="Assets\effect\Texture\starpart.PNG" />
+    <CustomBuild Include="Assets\effect\Texture\SwordLine01.png" />
+    <CustomBuild Include="Assets\effect\Texture\t0002.png" />
+    <CustomBuild Include="Assets\effect\Texture\Tentacle.png" />
+    <CustomBuild Include="Assets\effect\Texture\Thunder01.png" />
+    <CustomBuild Include="Assets\effect\Texture\Thunder10.png" />
+    <CustomBuild Include="Assets\effect\Texture\Thunder_Bold.png" />
+    <CustomBuild Include="Assets\effect\Texture\Thunder_Thin.png" />
+    <CustomBuild Include="Assets\effect\Texture\Wind.png" />
+    <CustomBuild Include="Assets\effect\Texture\Wind01.png" />
+    <CustomBuild Include="Assets\effect\Texture\wind02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\effect\BlackHole.efk">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\effect\BlackHole2.efk">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\effect\boost.efk">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\effect\boost2.efk">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\effect\charge01.efk">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\effect\Laserbeam.efk">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\effect\Shield.efk">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\effect\ShieldKai.efk">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\effect\test.efk">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Assets\effect\Test02.efk">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.targets" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.targets" />
+  </ImportGroup>
+</Project>

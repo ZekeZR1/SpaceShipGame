@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{ed0b04a6-fecd-4a2c-a462-59a8f4639f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Assets\modelData">
+      <UniqueIdentifier>{06086914-6aa4-4cad-9b07-6f9d357f04df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\shader">
+      <UniqueIdentifier>{a961ab0f-689c-4adf-940a-ffea33655653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\font">
+      <UniqueIdentifier>{9ce24419-5cae-4de8-84f5-336ce6bdb0e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\effect">
+      <UniqueIdentifier>{1c857c33-6d78-4b5b-816e-7ceb45a3e389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\effect\Texture">
+      <UniqueIdentifier>{8b31e80d-a444-4ef6-a616-be60a9d00e35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\sound">
+      <UniqueIdentifier>{f92d3670-0078-458e-ac0c-ab801229e10f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\animData">
+      <UniqueIdentifier>{687d504e-13be-46ea-895b-8f32b88f232a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\sprite">
+      <UniqueIdentifier>{36cfdca1-fb16-42b3-9d22-543f33fe7b58}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Title.cpp" />
+    <ClCompile Include="Fade.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="GameCamera.cpp" />
+    <ClCompile Include="BackGround.cpp" />
+    <ClCompile Include="minusObj.cpp" />
+    <ClCompile Include="minusGenerator.cpp" />
+    <ClCompile Include="plusObj.cpp" />
+    <ClCompile Include="plusGenerator.cpp" />
+    <ClCompile Include="FuelMeter.cpp" />
+    <ClCompile Include="HelthMeter.cpp" />
+    <ClCompile Include="Param2D.cpp" />
+    <ClCompile Include="GameOver2D.cpp" />
+    <ClCompile Include="GameClear.cpp" />
+    <ClCompile Include="BackWall.cpp" />
+    <ClCompile Include="How.cpp" />
+    <ClCompile Include="Story.cpp" />
+    <ClCompile Include="SpaceMap.cpp" />
+    <ClCompile Include="Earth.cpp" />
+    <ClCompile Include="BackGenerator.cpp" />
+    <ClCompile Include="ClearState.cpp" />
+    <ClCompile Include="ShipCustomizeScene.cpp" />
+    <ClCompile Include="ShipState.cpp" />
+    <ClCompile Include="Attachments.cpp" />
+    <ClCompile Include="Laserbeam.cpp" />
+    <ClCompile Include="Notify.cpp" />
+    <ClCompile Include="BackDummy.cpp" />
+    <ClCompile Include="Menu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Title.h" />
+    <ClInclude Include="Fade.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="GameCamera.h" />
+    <ClInclude Include="BackGround.h" />
+    <ClInclude Include="minusObj.h" />
+    <ClInclude Include="minusGenerator.h" />
+    <ClInclude Include="plusObj.h" />
+    <ClInclude Include="plusGenerator.h" />
+    <ClInclude Include="FuelMeter.h" />
+    <ClInclude Include="HelthMeter.h" />
+    <ClInclude Include="Param2D.h" />
+    <ClInclude Include="GameOver2D.h" />
+    <ClInclude Include="GameClear.h" />
+    <ClInclude Include="BackWall.h" />
+    <ClInclude Include="How.h" />
+    <ClInclude Include="Story.h" />
+    <ClInclude Include="SpaceMap.h" />
+    <ClInclude Include="Earth.h" />
+    <ClInclude Include="BackGenerator.h" />
+    <ClInclude Include="ClearState.h" />
+    <ClInclude Include="ShipCustomizeScene.h" />
+    <ClInclude Include="ShipState.h" />
+    <ClInclude Include="Attachments.h" />
+    <ClInclude Include="Laserbeam.h" />
+    <ClInclude Include="Notify.h" />
+    <ClInclude Include="BackDummy.h" />
+    <ClInclude Include="Menu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\shader\tonemap.fx">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\bloom.fx">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\copy.fx">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\fxaa.fx">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\LightCulling.fx">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\model.fx">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\modelCB.h">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\modelSRV.h">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\modelStruct.h">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\sampleBRDF.h">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\sprite.fx">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\LightingFunction.h">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\dithering.fx">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\font\myfile.spritefont">
+      <Filter>Assets\font</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\shader\shadowBlur.fx">
+      <Filter>Assets\shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\press_key.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\gamebgm.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\shipSE.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\button.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\start.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\title.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\charge.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\Cursor1.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\digitalworld.WAV">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\boost.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\bomb4.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\boost2.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\yokoku.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\gameover.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\shipbomb.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\magic4.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\magic.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\repair.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\AnimSpaceShipIdle.tka">
+      <Filter>Assets\animData</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\AnimSpaceShipRight.tka">
+      <Filter>Assets\animData</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\stage03.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\gameclearbgm.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\MapBGM.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\mapscene.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\stage02.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\stage00.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\stage01.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\storybgm.wav" />
+    <CustomBuild Include="Assets\sound\Buff.wav" />
+    <CustomBuild Include="Assets\sound\shieldSe.wav" />
+    <CustomBuild Include="Assets\sound\laser5.wav" />
+    <CustomBuild Include="Assets\sound\baseSe.wav" />
+    <CustomBuild Include="Assets\sound\custombgm1.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\sound\custombgm.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\sprite\AtchNormal.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\AtchShield.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Attachment01.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Attachment02.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Attachment03.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Bbutton.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\customizepick.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\customizepickA.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\CustomizeSceneBackTexture.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\CutomizeBackSprite.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Dpad.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\DpadS.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\fade.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\fade1.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\False.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\FuelMeter.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\FuelMeter1.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\FuelMeterAlpha.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\gameclear.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\GameClearSprite.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\gameover.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\GameOverSprite.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\GameTitle.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\GameTitle2.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\GCS.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\GraConATCS.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\GraConInfo.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\HelthMeter.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\HelthMeter1.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\HelthMeterAlpha.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\howpick.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\howpickA.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\howtoplay.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\jump0.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\jump1.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\LaserATCS.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\LaserInfo.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Line.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Line1.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Menu.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\MenuPick.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Meter.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\MeterBack.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\NormalATCS.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\NormalInfo.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Noti1.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Noti2.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Noti3.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\paramText.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\pick.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\PlayingStage.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\RankA.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\RankB.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\RankC.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\RankD.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\RankS.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\RankSprite.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\ShieldATCS.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\ShieldInfo.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Stage00Notify.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Stage01SeacretText.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\StageClear.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\StageText.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\startbutton.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\startpick.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\startpickA.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Story01_1.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Story01_2.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Story02_1.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Story02_2.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Story03_1.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Story04_1.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Story05_1.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\test01.jpg">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Title2d.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\titles.jpeg">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\understandingXman.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Using01.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Using02.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Using03.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\UsingAtchSpriteBack.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\warpback.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Xbutton.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\XbuttonToCus.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\XbuttonToTitle.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Ybutton.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\YbuttonR.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\YbuttonStory.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\00Text.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\01Text.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\02Text.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\03Text.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\Abutton.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\AtchGraCon.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\sprite\AtchLaser.png">
+      <Filter>Assets\sprite</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\actionlines.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\aurora01.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Burst_1.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Burst_2.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Burst01.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\burst02_red.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\clockHand.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Cloud01.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\double-shockwave.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\drillshi.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\eggzero.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\ExperimentalBlur.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\ExperimentalNoise.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Fire.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Fire_Blur.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Fire_Single.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\fire_tex.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Flame01.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Glass.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\glow.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Halo.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\IntensiveLine.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\LaserMain01.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\LaserMain02.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\NoiseAnimation.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\orb_colored.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle_Hard.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle_Soft.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle01.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle02.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle03.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle04_bokashi_hard.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle04_bokashi_soft.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle04_bokashistrong_hard.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle04_bokashistrong_soft.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle04_clear_hard.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle04_clear_soft.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\ribbon01_trans.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\ShadowEye.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Shock_wave_ring001.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Shock_wave_ring001_long.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Shock_wave_ring002.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Shock_wave004.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Shockwave.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Smoke.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\smoke_tex.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Splash.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Splash01.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\squareWave.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\squareWave03_192.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\squareWave03_384.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Star.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\starpart.PNG">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\SwordLine01.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\t0002.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Tentacle.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Thunder_Bold.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Thunder_Thin.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Thunder01.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Thunder10.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Wind.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Wind01.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\wind02.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <MeshContentTask Include="Assets\modelData\AnimSpaceShip.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\background.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\BackWall.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\BackWall1.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\BarrierAttachment.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\ClearPlanet.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\ClearPlanet1.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\ClearPlanet2.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\ClearPlanet3.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\CubeSpace.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\CustomizeSceneBack.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\Earth.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\GravityAttachment.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\Laserbeam.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\LaserCannon.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\mbox.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\myship01.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\NormalShipAttachment.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\Planet0.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\Planet0Seacret.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\Planet02.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\Planet03.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\Planet04.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\PlayerAir.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\plus.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\RedBox.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\SpaceMapBack.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\SpaceShip.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\SpaceWall.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\star.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\Stone.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\superShip.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\testpbox.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\titlespace.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\toCustomizeShip.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\waprback2.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\warpback.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\warpbakDummy.FBX">
+      <Filter>Assets\modelData</Filter>
+    </MeshContentTask>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\modelData\AnimSpaceShip.tks">
+      <Filter>Assets\modelData</Filter>
+    </None>
+    <None Include="Assets\effect\Shield.efk">
+      <Filter>Assets\effect</Filter>
+    </None>
+    <None Include="Assets\effect\ShieldKai.efk">
+      <Filter>Assets\effect</Filter>
+    </None>
+    <None Include="Assets\effect\test.efk">
+      <Filter>Assets\effect</Filter>
+    </None>
+    <None Include="Assets\effect\Test02.efk">
+      <Filter>Assets\effect</Filter>
+    </None>
+    <None Include="Assets\effect\BlackHole.efk">
+      <Filter>Assets\effect</Filter>
+    </None>
+    <None Include="Assets\effect\BlackHole2.efk">
+      <Filter>Assets\effect</Filter>
+    </None>
+    <None Include="Assets\effect\boost.efk">
+      <Filter>Assets\effect</Filter>
+    </None>
+    <None Include="Assets\effect\boost2.efk">
+      <Filter>Assets\effect</Filter>
+    </None>
+    <None Include="Assets\effect\charge01.efk">
+      <Filter>Assets\effect</Filter>
+    </None>
+    <None Include="Assets\effect\Laserbeam.efk">
+      <Filter>Assets\effect</Filter>
+    </None>
+  </ItemGroup>
+</Project>
